@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-angular-elements-web-part-client-side-solution",
+    "id": "c4d2aa0a-bcb6-480c-be10-bcf93f75024c",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "spfx-angular-elements-web-part description"
+      },
+      "longDescription": {
+        "default": "spfx-angular-elements-web-part description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "spfx-angular-elements-web-part Feature",
+        "description": "The feature that activates elements of the spfx-angular-elements-web-part solution.",
+        "id": "950937c6-497b-4552-a11a-98a7c3bb4e58",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-angular-elements-web-part.sppkg"
+  }
+}

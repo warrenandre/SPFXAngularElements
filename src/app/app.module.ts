@@ -1,16 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Injector } from '@angular/core';
+import { createCustomElement } from '@angular/elements';
 
-import { AppComponent } from './app.component';
+import { HelloSpfxWebPartComponent } from './hello-spfx-web-part/hello-spfx-web-part.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    HelloSpfxWebPartComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  entryComponents: [HelloSpfxWebPartComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(private injector: Injector){}
+  
+  ngDoBootstrap(){
+    const el = createCustomElement(HelloSpfxWebPartComponent, {injector:this.injector});
+    customElements.define('app-hello-spfx-web-part',el);
+  }
+}
